@@ -1,0 +1,12 @@
+source "https://rubygems.org"
+
+gemspec
+
+gem "crypticons", path: "../crypticons_gem"
+
+group :development, :test do
+  gem "minitest"
+  gem "rake"
+  gem "rubocop"
+  gem "rubocop-github"
+end

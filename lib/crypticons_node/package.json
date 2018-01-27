@@ -1,0 +1,32 @@
+{
+  "version": "1.0.0",
+  "name": "crypticons",
+  "description": "A scalable set of cryptocurrency icons.",
+  "homepage": "https://github.com/mitchellcash/crypticons",
+  "author": "Mitchell Cash",
+  "license": "MIT",
+  "style": "index.scss",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "index.scss",
+    "build"
+  ],
+  "repository": "https://github.com/mitchellcash/crypticons.git",
+  "bugs": {
+    "url": "https://github.com/mitchellcash/crypticons/issues"
+  },
+  "scripts": {
+    "prepare": "../../script/build-svg ./build && ../../script/build-json ./build && cp index.scss build/build.css",
+    "test": "ava --verbose 'tests/*.js'"
+  },
+  "keywords": [
+    "cryptocurrency",
+    "icons",
+    "svg",
+    "crypticons"
+  ],
+  "dependencies": {
+    "object-assign": "^4.1.1"
+  }
+}

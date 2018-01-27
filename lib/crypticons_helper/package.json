@@ -1,0 +1,24 @@
+{
+  "name": "crypticons_helper",
+  "version": "1.0.0",
+  "description": "A rails helper that makes including svg Crypticons simple.",
+  "scripts": {
+    "version": "../../script/rubyversion ./lib/crypticons_helper/version.rb",
+    "postinstall": "bundle install --path vendor/bundle",
+    "prepublishOnly": "gem build crypticons_helper.gemspec && gem push crypticons_helper-*.gem",
+    "test": "bundle exec rubocop && bundle exec rake"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitchellcash/crypticons.git"
+  },
+  "author": "Mitchell Cash",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mitchellcash/crypticons/issues"
+  },
+  "homepage": "https://github.com/mitchellcash/crypticons",
+  "dependencies": {
+    "crypticons_gem": "1.0.0"
+  }
+}

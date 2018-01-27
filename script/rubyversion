@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+
+crypticons_version=$(jq -r .dependencies.crypticons_gem package.json | sed -e 's/-alpha/.pre/g')
+new_version=$(echo $npm_package_version | sed -e 's/-alpha/.pre/g')
+
+perl -pi -e "s/VERSION = \"[^\"]+\"/VERSION = \"${new_version}\"/" ./lib/**/version.rb
+perl -pi -e "s/\"crypticons\", \"[^\"]+\"/\"crypticons\", \"${crypticons_version}\"/" ./*.gemspec
+
+git add ./lib/**/version.rb ./Gemfile ./*.gemspec
