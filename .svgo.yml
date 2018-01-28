@@ -3,7 +3,6 @@ plugins:
   - removeStyleElement: true
   - removeAttrs:
       attrs:
-        - id
         - class
         - data-name
   - removeEmptyContainers: true
