@@ -12,3 +12,5 @@ plugins:
   - removeEditorsNSData: true
   - removeEmptyAttrs: true
   - removeHiddenElems: true
+  - removeViewBox: false
+  - prefixIds: true
