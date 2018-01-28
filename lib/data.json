@@ -48,5 +48,10 @@
     "keywords": [
       "zcash"
     ]
+  },
+  "dogecoin": {
+    "keywords": [
+      "dogecoin"
+    ]
   }
 }
