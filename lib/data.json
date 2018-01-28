@@ -28,5 +28,10 @@
     "keywords": [
       "peercoin"
     ]
+  },
+  "monero": {
+    "keywords": [
+      "monero"
+    ]
   }
 }
